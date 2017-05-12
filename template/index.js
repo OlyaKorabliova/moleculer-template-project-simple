@@ -4,6 +4,7 @@ let { ServiceBroker } = require("moleculer");
 {{#apiGW}}
 let ApiGateway = require("moleculer-web");
 {{/apiGW}}
+
 // Create broker
 let broker = new ServiceBroker({
 	logger: console,
