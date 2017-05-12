@@ -3,6 +3,12 @@
 module.exports = function(values) {
 	return {
 		questions: [
+			{
+				type: "confirm",
+				name: "apiGW",
+				message: "Add API Gateway (moleculer-web) service",
+				default: true
+			}
 		],
 
 		completeMessage: `

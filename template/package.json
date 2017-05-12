@@ -32,7 +32,8 @@
     ]
   },
   "dependencies": {
-    "moleculer": "*"
+    "moleculer": "*"{{#apiGW}},
+    "moleculer-web": "*"{{/apiGW}}
   },
   "engines": {
     "node": ">= 6.x.x"
