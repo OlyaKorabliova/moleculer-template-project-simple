@@ -20,6 +20,13 @@
     "jest-cli": "20.0.0",
     "nodemon": "1.11.0"
   },
+  "dependencies": {
+    "moleculer": "^0.7.1"{{#apiGW}},
+    "moleculer-web": "^0.2.1"{{/apiGW}}
+  },
+  "engines": {
+    "node": ">= 6.x.x"
+  },
   "jest": {
     "testEnvironment": "node",
     "rootDir": "./src",
@@ -30,12 +37,5 @@
       "/node_modules/",
       "/test/"
     ]
-  },
-  "dependencies": {
-    "moleculer": "*"{{#apiGW}},
-    "moleculer-web": "*"{{/apiGW}}
-  },
-  "engines": {
-    "node": ">= 6.x.x"
   }
 }
