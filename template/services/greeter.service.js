@@ -1,19 +1,20 @@
 "use strict";
 
 module.exports = {
-	name: "test",
+	name: "greeter",
 
 	actions: {
+		
 		hello() {
 			return "Hello Moleculer";
 		},
 
-		greeter: {
+		welcome: {
 			params: {
 				name: "string"
 			},
 			handler(ctx) {
-				return `Hello ${ctx.params.name}`;
+				return `Welcome, ${ctx.params.name}`;
 			}
 		}
 	}

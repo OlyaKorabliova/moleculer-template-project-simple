@@ -1,13 +1,19 @@
 # {{projectName}}
 
-## Usage
+## Build Setup
 
-```
-$ npm run dev
+``` bash
+# Install dependencies
+npm install
 
-$ npm test
+# Start in development mode with REPL
+npm run dev
+{{#unit}}
 
-$ npm run ci
+# Run unit tests
+npm test
 
-$ npm start
+# Run in continuous test mode
+npm run ci
+{{/unit}}
 ```

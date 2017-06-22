@@ -1,13 +1,13 @@
 {
   "name": "{{projectName}}",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "My Moleculer project",
   "scripts": {
-    "dev": "nodemon index.js",
-    "start": "node index.js",
+    "dev": "moleculer-runner --repl services",
+    "start": "moleculer-runner services"{{#jest}},
     "ci": "jest --watch",
-    "test": "jest --coverage"
+    "test": "jest --coverage"{{/jest}}{{#lint}},
+    "lint": "eslint services"{{/lint}}
   },
   "keywords": [
     "microservices",
@@ -15,27 +15,41 @@
   ],
   "author": "",
   "devDependencies": {
-    "eslint": "3.19.0",
-    "jest": "20.0.0",
-    "jest-cli": "20.0.0",
-    "nodemon": "1.11.0"
+    {{#lint}}
+    "eslint": "4.0.0",
+    {{/lint}}
+    {{#jest}}
+    "jest": "20.0.4",
+    "jest-cli": "20.0.4",
+    {{/jest}}
+    "moleculer-repl": "^0.1.3"
   },
   "dependencies": {
-    "moleculer": "^0.7.6"{{#apiGW}},
-    "moleculer-web": "^0.3.0"{{/apiGW}}
+    {{#apiGW}}
+    "moleculer-web": "^0.3.3",
+    {{/apiGW}}
+    {{#if_eq transporter "NATS"}}
+    "nats": "0.7.20",
+    {{/if_eq}}
+    {{#if_eq transporter "MQTT"}}
+    "mqtt": "2.9.0",
+    {{/if_eq}}
+    {{#if_eq transporter "Redis"}}
+    "ioredis": "3.1.1",
+    {{/if_eq}}
+    {{#if_eq cacher "Redis"}}
+    "ioredis": "3.1.1",
+    {{/if_eq}}
+    "moleculer": "^0.8.0"
   },
   "engines": {
     "node": ">= 6.x.x"
-  },
+  }{{#jest}},
   "jest": {
     "testEnvironment": "node",
-    "rootDir": "./src",
+    "rootDir": "./services",
     "roots": [
       "../test"
-    ],
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
     ]
-  }
+  }{{/jest}}
 }

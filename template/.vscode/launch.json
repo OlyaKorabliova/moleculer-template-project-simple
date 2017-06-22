@@ -8,9 +8,12 @@
 		{
 			"type": "node",
 			"request": "launch",
-			"name": "Launch program",
-			"program": "${workspaceRoot}\\index.js",
-			"cwd": "${workspaceRoot}"
+			"name": "Debug",
+			"program": "${workspaceRoot}\\node_modules\\moleculer\\bin\\moleculer-runner.js",
+			"cwd": "${workspaceRoot}",
+			"args": [
+				"services"
+			]
 		},
 		{
 			"type": "node",
