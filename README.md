@@ -1,4 +1,4 @@
-# Moleculer templates: Project simple
+# Moleculer templates: `project-simple`
 :mortar_board: Simple Moleculer based microservices project template
 
 ## Features
@@ -8,7 +8,7 @@
 - Optional Transporter & Cacher
 - Unit tests with [Jest](http://facebook.github.io/jest/)
 - Lint with [ESLint](http://eslint.org/)
-- Launch file for debugging for [VSCode](https://code.visualstudio.com/)
+- Launch file for debugging in [VSCode](https://code.visualstudio.com/)
 
 
 ## Install
