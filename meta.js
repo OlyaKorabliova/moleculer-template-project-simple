@@ -20,12 +20,12 @@ module.exports = function(values) {
 				name: "transporter",
 				message: "Select a transporter",
 				choices: [
-					{ name: "NATS (recommended)", value: "nats" },
-					{ name: "MQTT", value: "mqtt" },
-					{ name: "Redis", value: "redis" }
+					{ name: "NATS (recommended)", value: "NATS" },
+					{ name: "MQTT", value: "MQTT" },
+					{ name: "Redis", value: "Redis" }
 				],
 				when(answers) { return answers.needTransporter; },
-				default: "nats"
+				default: "NATS"
 			},
 			{
 				type: "confirm",
@@ -38,11 +38,11 @@ module.exports = function(values) {
 				name: "cacher",
 				message: "Select a cacher solution",
 				choices: [
-					{ name: "Memory", value: "memory" },
-					{ name: "Redis", value: "redis" }
+					{ name: "Memory", value: "Memory" },
+					{ name: "Redis", value: "Redis" }
 				],
 				when(answers) { return answers.needCacher; },
-				default: "memory"
+				default: "Memory"
 			}
 		],
 
