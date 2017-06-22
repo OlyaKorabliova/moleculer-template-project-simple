@@ -1,12 +1,13 @@
 {
   "name": "{{projectName}}",
   "version": "1.0.0",
-  "description": "",
+  "description": "My Moleculer project",
   "scripts": {
     "dev": "moleculer-runner --repl services",
-    "start": "moleculer-runner services",
+    "start": "moleculer-runner services"{{#jest}},
     "ci": "jest --watch",
-    "test": "jest --coverage"
+    "test": "jest --coverage"{{/jest}}{{#lint}},
+    "lint": "eslint services"{{/lint}}
   },
   "keywords": [
     "microservices",
@@ -14,11 +15,14 @@
   ],
   "author": "",
   "devDependencies": {
+    {{#lint}}
     "eslint": "4.0.0",
+    {{/lint}}
+    {{#jest}}
     "jest": "20.0.4",
     "jest-cli": "20.0.4",
-    "moleculer-repl": "^0.1.3",
-    "nodemon": "1.11.0"
+    {{/jest}}
+    "moleculer-repl": "^0.1.3"
   },
   "dependencies": {
     {{#apiGW}}

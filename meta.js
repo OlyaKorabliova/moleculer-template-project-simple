@@ -43,11 +43,25 @@ module.exports = function(values) {
 				],
 				when(answers) { return answers.needCacher; },
 				default: "Memory"
-			}
+			},
+			{
+				type: "confirm",
+				name: "lint",
+				message: "Use ESLint to lint your code?",
+				default: true
+			},
+			{
+				type: "confirm",
+				name: "jest",
+				message: "Setup unit tests with Jest?",
+				default: true
+			}			
 		],
 
 		"filters": {
-			"services/api.service.js": "apiGW"
+			"services/api.service.js": "apiGW",
+			".eslintrc.js": "lint",
+			"test/**/*": "jest",
 		},
 
 		completeMessage: `
