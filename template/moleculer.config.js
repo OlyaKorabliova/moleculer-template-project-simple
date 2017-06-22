@@ -9,11 +9,11 @@ module.exports = {
 	logLevel: "info",
 
 	{{#needTransporter}}
-	transporter: "{{#transporter}}",
+	transporter: "{{transporter}}",
 	{{/needTransporter}}
 
 	{{#needCacher}}
-	transporter: "{{#cacher}}",
+	transporter: "{{cacher}}",
 	{{/needCacher}}
 
 	serializer: null,
