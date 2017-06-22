@@ -7,12 +7,12 @@ module.exports = {
 
 	logger: true,
 	logLevel: "info",
-
 	{{#needTransporter}}
+
 	transporter: "{{transporter}}",
 	{{/needTransporter}}
-
 	{{#needCacher}}
+	
 	cacher: "{{cacher}}",
 	{{/needCacher}}
 
