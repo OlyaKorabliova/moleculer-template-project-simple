@@ -21,8 +21,22 @@
     "nodemon": "1.11.0"
   },
   "dependencies": {
-    "moleculer": "^0.8.0"{{#apiGW}},
-    "moleculer-web": "^0.3.3"{{/apiGW}}
+    {{#apiGW}}
+    "moleculer-web": "^0.3.3",
+    {{/apiGW}}
+    {{#if_eq transporter "NATS"}}
+    "nats": "0.7.20",
+    {{/if_eq}}
+    {{#if_eq transporter "MQTT"}}
+    "mqtt": "2.9.0",
+    {{/if_eq}}
+    {{#if_eq transporter "Redis"}}
+    "ioredis": "3.1.1",
+    {{/if_eq}}
+    {{#if_eq cacher "Redis"}}
+    "ioredis": "3.1.1",
+    {{/if_eq}}
+    "moleculer": "^0.8.0"
   },
   "engines": {
     "node": ">= 6.x.x"
