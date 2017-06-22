@@ -13,7 +13,7 @@ module.exports = {
 	{{/needTransporter}}
 
 	{{#needCacher}}
-	transporter: "{{cacher}}",
+	cacher: "{{cacher}}",
 	{{/needCacher}}
 
 	serializer: null,
