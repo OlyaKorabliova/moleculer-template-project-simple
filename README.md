@@ -1,5 +1,5 @@
-# moleculer-template-project-simple
-:mortar_board: Simpleproject template for Moleculer
+# Moleculer templates: Project simple
+:mortar_board: Simple Moleculer based microservices project template
 
 ## Features
 - Moleculer v0.8.x with `moleculer.config.js`
