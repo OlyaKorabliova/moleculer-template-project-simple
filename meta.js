@@ -46,6 +46,10 @@ module.exports = function(values) {
 			}
 		],
 
+		"filters": {
+			"services/api.service.js": "apiGW"
+		},
+
 		completeMessage: `
 To get started:
 
