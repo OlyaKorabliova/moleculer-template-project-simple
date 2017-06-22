@@ -44,12 +44,12 @@
   },
   "engines": {
     "node": ">= 6.x.x"
-  },
+  }{{#jest}},
   "jest": {
     "testEnvironment": "node",
     "rootDir": "./services",
     "roots": [
       "../test"
     ]
-  }
+  }{{/jest}}
 }
