@@ -16,7 +16,7 @@
   "author": "",
   "devDependencies": {
     {{#lint}}
-    "eslint": "4.3.0",
+    "eslint": "4.4.1",
     {{/lint}}
     {{#jest}}
     "jest": "20.0.4",
@@ -32,15 +32,15 @@
     "nats": "0.7.20",
     {{/if_eq}}
     {{#if_eq transporter "MQTT"}}
-    "mqtt": "2.9.0",
+    "mqtt": "2.11.0",
     {{/if_eq}}
     {{#if_eq transporter "Redis"}}
-    "ioredis": "3.1.1",
+    "ioredis": "3.1.2",
     {{/if_eq}}
     {{#if_eq cacher "Redis"}}
-    "ioredis": "3.1.1",
+    "ioredis": "3.1.2",
     {{/if_eq}}
-    "moleculer": "^0.8.4"
+    "moleculer": "^0.9.0"
   },
   "engines": {
     "node": ">= 6.x.x"
