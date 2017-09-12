@@ -34,6 +34,13 @@ Create 'moleculer-demo2' folder...
 ? Would you like to run 'npm install'? Yes
 ```
 
+## NPM scripts
+- `npm run dev` - Start service.js in hot-reload and start REPL
+- `npm lint` - Run ESLint
+- `npm run ci` - Start testing in watch mode
+- `npm start` - Start service.js in production mode
+- `npm test` - Run tests & coverage
+
 ## License
 Moleculer-cli is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
