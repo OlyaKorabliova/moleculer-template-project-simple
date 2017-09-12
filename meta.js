@@ -22,6 +22,7 @@ module.exports = function(values) {
 				choices: [
 					{ name: "NATS (recommended)", value: "NATS" },
 					{ name: "MQTT", value: "MQTT" },
+					{ name: "AMQP", value: "AMQP" },
 					{ name: "Redis", value: "Redis" }
 				],
 				when(answers) { return answers.needTransporter; },
