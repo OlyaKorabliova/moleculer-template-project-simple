@@ -1,8 +1,8 @@
-# Moleculer templates: `project-simple`
+# Moleculer template: `project-simple`
 :mortar_board: Simple Moleculer based microservices project template
 
 ## Features
-- Moleculer v0.8.x with `moleculer.config.js`
+- Moleculer v0.11.x with `moleculer.config.js`
 - Simple project with a demo `greeter` service
 - Optional API Gateway service
 - Optional Transporter & Cacher
