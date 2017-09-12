@@ -8,6 +8,7 @@ module.exports = {
 
 	logger: true,
 	logLevel: "info",
+	logFormatter: "default",
 	{{#needTransporter}}
 
 	transporter: "{{transporter}}",
@@ -22,25 +23,30 @@ module.exports = {
 	requestTimeout: 0 * 1000,
 	requestRetry: 0,
 	maxCallLevel: 0,
-	heartbeatInterval: 10,
-	heartbeatTimeout: 30,
+	heartbeatInterval: 5,
+	heartbeatTimeout: 15,
+
+	disableBalancer: false,
 
 	registry: {
-		strategy: Moleculer.STRATEGY_ROUND_ROBIN,
+		strategy: Moleculer.Strategies.RoundRobin,
 		preferLocal: true				
 	},
 
 	circuitBreaker: {
 		enabled: false,
-		maxFailures: 5,
+		maxFailures: 3,
 		halfOpenTime: 10 * 1000,
 		failureOnTimeout: true,
 		failureOnReject: true
 	},
 
 	validation: true,
+	validator: null,
 	metrics: false,
 	metricsRate: 1,
 	statistics: false,
-	internalActions: true
+	internalActions: true,
+
+	hotReload: false
 };
