@@ -17,8 +17,8 @@ module.exports = {
 
 		/**
 		 * Say a 'Hello'
-		 * 
-		 * @returns 
+		 *
+		 * @returns
 		 */
 		hello() {
 			return "Hello Moleculer";
@@ -26,7 +26,7 @@ module.exports = {
 
 		/**
 		 * Welcome a username
-		 * 
+		 *
 		 * @param {String} name - User name
 		 */
 		welcome: {
@@ -72,5 +72,5 @@ module.exports = {
 	 */
 	stopped() {
 
-	}	
+	}
 };
