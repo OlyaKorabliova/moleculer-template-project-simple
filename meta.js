@@ -56,7 +56,7 @@ module.exports = function(values) {
 				name: "jest",
 				message: "Setup unit tests with Jest?",
 				default: true
-			}			
+			}
 		],
 
 		"filters": {

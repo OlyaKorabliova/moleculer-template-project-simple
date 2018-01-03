@@ -14,7 +14,7 @@ module.exports = {
 	transporter: "{{transporter}}",
 	{{/needTransporter}}
 	{{#needCacher}}
-	
+
 	cacher: "{{cacher}}",
 	{{/needCacher}}
 
@@ -30,7 +30,7 @@ module.exports = {
 
 	registry: {
 		strategy: Moleculer.Strategies.RoundRobin,
-		preferLocal: true				
+		preferLocal: true
 	},
 
 	circuitBreaker: {
