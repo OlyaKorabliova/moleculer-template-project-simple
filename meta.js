@@ -12,7 +12,7 @@ module.exports = function(values) {
 			{
 				type: "confirm",
 				name: "needTransporter",
-				message: "Would you like communicate with other nodes?",
+				message: "Would you like to communicate with other nodes?",
 				default: false
 			},
 			{
@@ -31,7 +31,7 @@ module.exports = function(values) {
 			{
 				type: "confirm",
 				name: "needCacher",
-				message: "Would you like use cache?",
+				message: "Would you like to use cache?",
 				default: false
 			},
 			{
