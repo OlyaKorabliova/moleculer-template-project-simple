@@ -12,7 +12,7 @@
 
 
 ## Install
-To install use the [moleculer-cli](https://github.com/ice-services/moleculer-cli) tool.
+To install use the [moleculer-cli](https://github.com/moleculerjs/moleculer-cli) tool.
 
 ```bash
 $ moleculer init project-simple my-project
@@ -22,7 +22,7 @@ $ moleculer init project-simple my-project
 ```
 $ moleculer init project-simple moleculer-demo2
 
-Template repo: ice-services/moleculer-template-project-simple
+Template repo: moleculerjs/moleculer-template-project-simple
 ? Add API Gateway (moleculer-web) service Yes
 ? Would you like communicate with other nodes? Yes
 ? Select a transporter NATS (recommended)
@@ -45,6 +45,6 @@ Create 'moleculer-demo2' folder...
 Moleculer-cli is available under the [MIT license](https://tldrlegal.com/license/mit-license).
 
 ## Contact
-Copyright (c) 2017 Ice-Services
+Copyright (c) 2018 MoleculerJS
 
-[![@ice-services](https://img.shields.io/badge/github-ice--services-green.svg)](https://github.com/ice-services) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)
+[![@moleculerjs](https://img.shields.io/badge/github-moleculerjs-green.svg)](https://github.com/moleculerjs) [![@MoleculerJS](https://img.shields.io/badge/twitter-MoleculerJS-blue.svg)](https://twitter.com/MoleculerJS)
